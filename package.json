@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-	"test": "mocha test/database.js"  
+    "test": "mocha test/database.js"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
@@ -17,5 +17,23 @@
     "mysql": "^2.9.0",
     "serve-favicon": "~2.3.0",
     "underscore": "^1.8.3"
-  }
+  },
+  "description": "",
+  "main": "app.js",
+  "bin": {
+    "risaleinur.com": "validate-articles.js"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cavitkeskin/eRisale.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cavitkeskin/eRisale/issues"
+  },
+  "homepage": "https://github.com/cavitkeskin/eRisale#readme"
 }
