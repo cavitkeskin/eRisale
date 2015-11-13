@@ -39,3 +39,8 @@ describe('lib/Database', function(){
 	});
     
 })
+
+//console.log('id: ', db.getList(0));
+//console.log('path: ', db.getList('/nur-lectures'));
+//console.log('article: ', db.getList(40));
+//console.log('url: ', db.getList('/nur-lectures/video'));

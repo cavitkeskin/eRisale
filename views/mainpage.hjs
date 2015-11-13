@@ -1,0 +1,20 @@
+<html>
+<head>
+ <link rel='stylesheet' href='/stylesheets/style.css' />
+<style>
+    a {
+    line-height: 220%;}
+</style>
+</head>
+
+<body>
+
+    <h1> Welcome </h1><br><br>
+
+    {{#list}}
+        <a href= "{{path}}/{{filename}}">{{title}}</a><br>
+    {{/list}}
+
+</body>
+    
+</html>

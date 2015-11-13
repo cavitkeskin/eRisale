@@ -1,0 +1,22 @@
+<html>
+
+<head>
+ <link rel='stylesheet' href='/stylesheets/style.css' />
+ 
+</head>
+
+<body>
+
+    {{#list}}
+    <a href= "{{path}}/{{filename}}">{{title}}</a><br>
+    {{/list}}
+
+    {{#article}}
+    
+    {{{content}}}
+
+    {{/article}}
+
+</body>
+    
+</html>
