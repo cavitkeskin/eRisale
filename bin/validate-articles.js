@@ -1,3 +1,5 @@
+#!/usr/local/bin/node
+
 var mysql = require('mysql'),
 	conf = require('../config'),
 	util = require('util'),

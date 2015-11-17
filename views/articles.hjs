@@ -7,16 +7,64 @@
 
 <body>
 
+<style>
+h4{
+text-align: center;}
+</style>
+
+   
     {{#list}}
-    <a href= "{{path}}/{{filename}}">{{title}}</a><br>
+    <a href= "{{path}}/{{filename}}">{{id}} &nbsp {{title}}</a><br>
     {{/list}}
 
     {{#article}}
-    
+    <div>    
     {{{content}}}
-
+    </div>
+     {{nex}}
+        <ul>
+        <a href= "{{path}}/{{filename}}">Previous</a>
+        &nbsp
+        <a href= "{{path}}/{{filename}}">Next</a><br>
+        </ul>
     {{/article}}
 
 </body>
     
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<div id="tfheader">
+    <form id="tfnewsearch" method="get" action="http://www.mywebsite.com">
+        <input type="text" class="tftextinput" id="tftextinput" name="q" size="30" maxlength="120"><input type="submit" value="search" class="tfbutton">
+    </form>
+<div class="tfclear"></div>
+</div>
+
+<script>
+    var a = document.getElementById('tfnewsearch');
+    a.addEventListener('submit',function(e) {
+        e.preventDefault();
+        var b = document.getElementById('tftextinput').value;
+        window.location.href = 'http://*'+b;
+
+    });
+
+</script>
+-->
